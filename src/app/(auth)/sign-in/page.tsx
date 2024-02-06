@@ -151,6 +151,7 @@ const Page = () => {
                 onClick={continueAsBuyer}
                 variant="secondary"
                 disabled={isLoading}
+                className="sm: mb-2"
               >
                 Continue as customer
               </Button>
@@ -159,6 +160,7 @@ const Page = () => {
                 onClick={continueAsSeller}
                 variant="secondary"
                 disabled={isLoading}
+                className="sm: mb-2"
               >
                 Continue as seller
               </Button>
