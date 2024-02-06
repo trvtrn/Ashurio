@@ -15,7 +15,7 @@ exports.Orders = {
     slug: "orders",
     admin: {
         useAsTitle: "Your Orders",
-        description: "A summary of all your orders on AntinomyWIP",
+        description: "A summary of all your orders on Ashurio",
     },
     access: {
         read: yourOwn,

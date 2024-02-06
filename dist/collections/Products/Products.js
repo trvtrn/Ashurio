@@ -198,7 +198,7 @@ exports.Products = {
         {
             name: "description",
             type: "textarea",
-            label: "Product detials",
+            label: "Product details",
         },
         {
             name: "price",

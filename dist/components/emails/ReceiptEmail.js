@@ -101,7 +101,7 @@ var ReceiptEmail = function (_a) {
                     " ",
                     React.createElement(components_1.Link, { href: "#" }, "Privacy Policy ")),
                 React.createElement(components_1.Text, { style: footerCopyright },
-                    "Copyright \u00A9 2023 AntinomyWIP Inc. ",
+                    "Copyright \u00A9 2023 Ashurio Inc. ",
                     React.createElement("br", null),
                     " ",
                     React.createElement(components_1.Link, { href: "#" }, "All rights reserved"))))));

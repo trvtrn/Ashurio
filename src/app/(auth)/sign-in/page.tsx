@@ -1,6 +1,5 @@
 "use client";
 
-import { Icons } from "@/components/Icons";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -43,22 +42,22 @@ const Page = () => {
   const { mutate: signIn, isLoading } = trpc.auth.signIn.useMutation({
     onSuccess: () => {
       toast.success("Signed in successfully");
-
       router.refresh();
+
+      console.log(origin);
 
       if (origin) {
         router.push(`/${origin}`);
         router.refresh();
         return;
-      }
-
-      if (isSeller) {
+      } else if (isSeller) {
         router.push("/sell");
         return;
+      } else {
+        router.push("/");
+        router.refresh();
+        return;
       }
-
-      router.push("/");
-      router.refresh();
     },
 
     onError: (err) => {

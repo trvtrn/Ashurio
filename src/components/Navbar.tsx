@@ -1,6 +1,5 @@
 import Link from "next/link";
 import MaxWidthWrapper from "./MaxWidthWrapper";
-import { Icons } from "./Icons";
 import NavItems from "./NavItems";
 import { buttonVariants } from "./ui/button";
 import Cart from "./Cart";
@@ -20,7 +19,7 @@ const Navbar = async () => {
         <MaxWidthWrapper>
           <div className="border-b border-gray-200">
             <div className="flex h-20 items-center">
-              <MobileNav />
+              <MobileNav user={user} />
               <div className="ml-4 flex lg:ml-0">
                 <Link href="/" className="text-gray-900 font-black text-xl">
                   Ashurio.
@@ -44,10 +43,9 @@ const Navbar = async () => {
                     </Link>
                   )}
                   <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-
-                  <div className="ml-4 flow-root lg:ml-6">
-                    <Cart />
-                  </div>
+                </div>
+                <div className="ml-4 flow-root lg:ml-6">
+                  <Cart />
                 </div>
               </div>
             </div>
