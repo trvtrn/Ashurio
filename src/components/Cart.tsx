@@ -1,6 +1,6 @@
 "use client";
 
-import { ShoppingBag, ShoppingCartIcon } from "lucide-react";
+import { ShoppingBag } from "lucide-react";
 import {
   Sheet,
   SheetClose,
@@ -14,7 +14,6 @@ import { Separator } from "./ui/separator";
 import { formatPrice } from "@/lib/utils";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
-import Image from "next/image";
 import { useCart } from "@/hooks/use-cart";
 import { ScrollArea } from "./ui/scroll-area";
 import CartItem from "./CartItem";

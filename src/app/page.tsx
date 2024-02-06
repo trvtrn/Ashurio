@@ -42,7 +42,6 @@ export default function Home() {
             <Link href="/products" className={buttonVariants()}>
               Browse Trending
             </Link>
-            <Button variant="ghost">Our quality promise &rarr;</Button>
           </div>
         </div>
 
@@ -51,6 +50,18 @@ export default function Home() {
           query={{ sort: "desc", limit: 4 }}
           href="/products?sort=recent"
           title="Brand new"
+        />
+
+        <ProductReel
+          query={{ category: "icons", sort: "desc", limit: 4 }}
+          href="/products?category=icons"
+          title="Icons"
+        />
+
+        <ProductReel
+          query={{ category: "ui_kits", sort: "desc", limit: 4 }}
+          href="/products?category=ui_kits"
+          title="UI Kits"
         />
       </MaxWidthWraper>
 

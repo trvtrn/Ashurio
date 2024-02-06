@@ -22,7 +22,7 @@ const Navbar = async () => {
             <div className="flex h-20 items-center">
               <MobileNav />
               <div className="ml-4 flex lg:ml-0">
-                <Link href="/" className="text-gray-900 font-black">
+                <Link href="/" className="text-gray-900 font-black text-xl">
                   Ashurio.
                 </Link>
               </div>

@@ -153,7 +153,7 @@ export const ReceiptEmail = ({
             <Link href="#">Privacy Policy </Link>
           </Text>
           <Text style={footerCopyright}>
-            Copyright © 2023 AntinomyWIP Inc. <br />{" "}
+            Copyright © 2023 Ashurio Inc. <br />{" "}
             <Link href="#">All rights reserved</Link>
           </Text>
         </Container>
