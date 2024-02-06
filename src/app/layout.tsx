@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { cn, constructMetadata } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import Navbar from "@/components/Navbar";
 import Providers from "@/components/Providers";
 import { Toaster } from "sonner";
@@ -9,7 +9,11 @@ import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = constructMetadata();
+// export const metadata = constructMetadata();
+export const metadata = {
+  title: "Ashurio",
+  description: "Ashurio is a digital marketplace for UI-Kits and Icon packs",
+};
 
 export default function RootLayout({
   children,
