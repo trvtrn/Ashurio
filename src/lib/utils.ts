@@ -58,7 +58,7 @@ export function constructMetadata({
       creator: "@trvtrn",
     },
     icons,
-    metadataBase: new URL("https://ashurio-production.up.railway.app/"),
+    metadataBase: new URL("https://ashurio-production.up.railway.app"),
     ...(noIndex && {
       robots: {
         index: false,

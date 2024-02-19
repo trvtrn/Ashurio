@@ -50,7 +50,7 @@ function constructMetadata(_a) {
             description: description,
             images: [image],
             creator: "@trvtrn",
-        }, icons: icons, metadataBase: new URL("https://ashurio.vercel.app/") }, (noIndex && {
+        }, icons: icons, metadataBase: new URL("https://ashurio-production.up.railway.app") }, (noIndex && {
         robots: {
             index: false,
             follow: false,
