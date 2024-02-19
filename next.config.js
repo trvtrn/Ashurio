@@ -8,7 +8,7 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "ashurio-production.up.railway.app",
+        hostname: "https://ashurio.vercel.app/",
       },
     ],
   },
